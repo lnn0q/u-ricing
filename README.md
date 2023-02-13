@@ -4,7 +4,7 @@ enjoy my dots =)
 currently present - 2 rices.
 
 - Artix Nord
-![ArtixPrev]()
+![ArtixPrev](https://github.com/d0nut-dev/u-ricing/blob/main/artix-nord-rice-0/scr.jpg)
 
 - Gentoo Catppucin
 ![GentooPrev]()
