@@ -1,0 +1,13 @@
+[Bookmarks]
+/home/lnn0q/Documents/Blender/Projects/
+[Recent]
+/home/lnn0q/Documents/Blender/Projects/Dice/
+/home/lnn0q/Documents/Blender/Projects/RainyStreet/
+/home/lnn0q/Documents/Blender/Projects/characterModeling/fox/
+/home/lnn0q/Documents/Blender/Projects/characterModeling/2/
+/home/lnn0q/Documents/Blender/Projects/characterModeling/ch1Tutor/
+/home/lnn0q/Documents/Blender/Projects/donut1/
+/home/lnn0q/Documents/Blender/Projects/cookie/
+/home/lnn0q/Documents/Blender/RainyStreet/
+/home/lnn0q/Blender_Nord_Dark_Theme/
+/home/lnn0q/Downloads/

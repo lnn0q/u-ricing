@@ -4,7 +4,10 @@ enjoy my dots =)
 currently present - 2 rices.
 
 - Artix Nord
+![ArtixPrev]()
+
 - Gentoo Catppucin
+![GentooPrev]()
 
 Attention! 
 I do not own any of the rights of the wallpapers that are posted here! 

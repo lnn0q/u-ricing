@@ -1,0 +1,12 @@
+ronfiguration {
+    modes: [ combi ];
+    combi-modes: [ windows, drun, run];
+
+}
+
+//@theme "arthur"
+
+//@theme "Arc-Dark"
+
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/usr/share/rofi/themes/Nord.rasi"
