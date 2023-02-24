@@ -79,4 +79,4 @@ eww
 
 Blender, Gparted, Gdmap, Wireshark, Kazam, LibreOffice, minetest, FileZilla, XScreenSaver, Arandr, ArduinoIDE, Tiddly
 
-Scr: Tree, pfetch, nmap
+Scr: Tree, pfetch, nmap, keychain
