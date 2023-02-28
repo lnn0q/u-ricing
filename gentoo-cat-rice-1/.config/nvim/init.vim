@@ -59,6 +59,7 @@ nnoremap <C-i> :NvimTreeToggle<CR>
 
 "Autocompletion
 "
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
 if has('nvim')
 	inoremap <silent><expr> <c-space> coc#refresh()
 else
@@ -84,6 +85,8 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-json',
   \ 'coc-css',
+  \ 'coc-html',
+  \ 'coc-emmet',
   \  'coc-eslint',
   \  'coc-prettier',
   \  'coc-clangd',
