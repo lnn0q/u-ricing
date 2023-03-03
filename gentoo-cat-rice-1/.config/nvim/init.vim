@@ -22,6 +22,8 @@ Plug 'numToStr/Comment.nvim'
 
 Plug 'windwp/nvim-autopairs'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 call plug#end()
 
 "Mappings
@@ -386,3 +388,32 @@ EOF
 lua << EOF
 require("nvim-autopairs").setup {}
 EOF
+
+"MD Preview"
+
+" use a custom markdown style must be absolute path
+" like '/Users/username/markdown.css' or expand('~/markdown.css')
+let g:mkdp_markdown_css = '~/.config/nvim/md-styles/markdown.css'
+
+" use a custom highlight style must absolute path
+" like '/Users/username/highlight.css' or expand('~/highlight.css')
+let g:mkdp_highlight_css = '~/.config/nvim/md-styles/highlight.css'
+
+" use a custom port to start server or empty for random
+let g:mkdp_port = ''
+
+" preview page title
+" ${name} will be replace with the file name
+let g:mkdp_page_title = '${name}'
+
+" recognized filetypes
+" these filetypes will have MarkdownPreview... commands
+let g:mkdp_filetypes = ['markdown']
+
+" set default theme (dark or light)
+" By default the theme is define according to the preferences of the system
+let g:mkdp_theme = 'dark'
+
+nmap <C-s> <Plug>MarkdownPreview
+nmap <M-s> <Plug>MarkdownPreviewStop
+nmap <C-p> <Plug>MarkdownPreviewToggle
