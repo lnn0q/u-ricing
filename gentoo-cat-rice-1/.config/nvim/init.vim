@@ -93,7 +93,9 @@ let g:coc_global_extensions = [
   \  'coc-prettier',
   \  'coc-clangd',
   \  'coc-python',
-  \  'coc-copilot',
+  \  'coc-sh',
+  \  'coc-solargraph',
+  \  'coc-lua',
   \ ]
 
 "COC+AutoPairs
