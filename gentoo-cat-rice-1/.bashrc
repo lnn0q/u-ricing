@@ -23,9 +23,18 @@ fi
 
 #eval "$(starship init bash)"
 
+#ssh-agent
+eval $(keychain -q --eval id_ed_gh)
+
 . /home/lnn0q/.nix-profile/etc/profile.d/nix.sh
 
 alias nf='printf "\n\n\n\n\n" && nitch && printf "\n\n\n"'
+alias ll='ls -alF'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/Scripts:$PATH"
+
+# . /home/lnn0q/Scripts/shell-mommy.sh
+# export PROMPT_COMMAND="mommy \\$\\(exit \$?\\); $PROMPT_COMMAND"
+# export SHELL_MOMMYS_LITTLE="lnn0q"
+# export SHELL_MOMMYS_ROLES="imouto"

@@ -40,11 +40,16 @@ font pango:Agave Mono 11
 #exec on turning on:
 #exec nitrogen --restore&
 
+for_window [class="^.*"] border pixel 0
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id playerctl previous
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id playerctl next
 
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
@@ -229,6 +234,20 @@ bindsym $mod+r mode "resize"
 # use Polybar instead of i3bar
 exec_always --no-startup-id ~/.config/polybar/launch
 
+#exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json'"
+
+# Get coordinates and geometry from xwininfo
+
+#for_window [class="^kitty$"] move container to workspace $ws4, workspace $ws4, floating enable
+
+#exec --no-startup-id kitty 
+#for_window [class="^kitty$" instance="^kitty$" title="^kitty$"] floating enable, move position 3453 px 1330 px, resize set 1486 px 1166 px
+
+#exec --no-startup-id kitty --hold --detach sh -c "cava"
+#for_window [class="^kitty$" instance="^kitty$" title="^cava$"] floating enable, move position 1173 px 221 px, resize set 161 px 281 px
+
+#exec --no-startup-id kitty --hold --detach sh -c "nitch"
+#for_window [class="^kitty$" instance="^kitty$" title="^nf$"] floating enable, move position 1143 px 411 px, resize set 491 px 341 px
 
 default_border pixel 0 
 
